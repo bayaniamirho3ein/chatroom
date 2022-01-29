@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Cool Chatroom</title>
+</head>
+
+<body>
+
+    <div class="container-fluid h-100">
+        <div class="row justify-content-end h-100">
+            <div class="col chat">
+                <div class="col pt-2 text-center">
+                    <p class="roomName">Node.js</p>
+                    <p>تعداد افراد آنلاین : <span class="onlineCount">3</span></p>
+                </div>
+                <div class="col pt-2">
+                    <div class="chatBox">
+                        
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-2">
+                        <button type="submit" class="btn btn-success w-100 sendBtn">ارسال پیام</button>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control messageInput">
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 rooms pt-2">
+                <p class="title">اتاق ها</p>
+                <hr>
+                <div class="roomsList">
+
+                </div>
+            </div>
+            <div class="col-1 namespaces pt-2">
+                <p class="title">گروه ها</p>
+                <hr>
+                <div class="namespacesList">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+    <script src="/joinNamespace.js"></script>
+    <script src="/joinRoom.js"></script>
+</body>
+
+</html>

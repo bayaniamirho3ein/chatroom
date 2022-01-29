@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('Vazir.ttf');
+}
+
+html,
+body {
+    font-family: 'Vazir';
+    height: 100%;
+}
+
+.chat {
+    background-color: rgb(197, 220, 255);
+}
+
+.rooms {
+    background-color: rgb(53, 117, 255);
+    text-align: center;
+}
+
+.namespaces {
+    background-color: rgb(16, 80, 255);
+    text-align: center;
+}
+
+.btnJoin {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    transition: background-color 0.5s;
+    color: white;
+}
+
+.btnJoin:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+.chatBox {
+    width: 100%;
+    height: 550px;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.messageBox {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.messageBox::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.messageBox img {
+    float: left;
+    width: 4%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.time {
+    float: right;
+    color: #aaa;
+}
+
+.userName{
+    font-size: 21px;
+    color: rgb(0, 110, 255);
+}
+
+.title{
+    color : white
+}
